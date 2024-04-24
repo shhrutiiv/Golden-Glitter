@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Page</title>
+
+	<style>
+		@font-face {
+		  font-family: titleFont;
+		  src: url("fonts/CormorantUpright-Medium.ttf");
+		}
+
+		@font-face {
+		  font-family: contentFontType1;
+		  src: url("fonts/NotoSerifHebrew-Medium.ttf");
+		}
+
+		@font-face {
+		  font-family: contentFontType2;
+		  src: url("fonts/DMSerifDisplay-Regular.ttf");
+		}
+
+		body{
+		  background-color: #754f23;
+		  margin: 0px;
+		}
+
+		#contentDisplayDiv{
+		  width: 1000px;
+		  height: 750px;
+		  background-color: #f1e8c8;
+		  border-radius: 25px;
+		  margin: 75px auto;
+		  padding: 25px 25px;
+		  box-shadow: 5px 5px 12px 2px #55432f;
+		  position: relative;
+		}
+
+		#menuDiv{
+		  position: absolute;
+		  width: 100%;
+		  z-index: 10;
+		  margin-left: 10px;
+		  display: flex;
+		}
+
+		#logo{
+			width: 150px;
+			height: 150px;
+			margin-right: 150px;
+		}
+
+		#menuDivText{
+			display: flex;
+		}
+
+		.menuText{
+			font-family: titleFont;
+			font-size: 25px;
+			color: #000;
+			margin-right: 40px;
+		}
+
+		#menuTopIconDiv{
+			width: 100%;
+			flex: 1;
+			margin-top: 25px;
+		}
+
+		#shoppingBagIcon{
+			width: 30px;
+			height: 30px;
+			margin-left: 10px;
+		}
+
+		#ribbonIcon{
+			width: 30px;
+			height: 30px;
+			margin-left: 60px;
+		}
+
+		#homePageDiv{
+			position: absolute;
+			z-index: 5;
+			width: calc(100% - 100px);
+			height: auto;
+			display: flex;
+		}
+
+		#contentDiv{
+			width: 60%;
+			height: auto;
+			margin: 0px;
+		}
+
+		#homePageImgDiv{
+			width: 40%;
+			height: auto;
+			margin: 0px;
+		}
+
+		#contentText{
+			font-family: titleFont;
+			font-size: 60px;
+			color:  #2f2f2f;
+			margin-left: 80px;
+			margin-top: 200px;
+		}
+
+		#contentSmallText{
+			font-family: contentFontType2;
+			font-size: 24px;
+			color:  #2f2f2f;
+			margin-left: 80px;
+			margin-top: 35px;
+		}
+
+		#homePageImg{
+			width: 95%;
+			height: auto;
+			margin-top: 150px;
+			margin-left: 20px;
+		}
+
+		#button{
+			width: 120px;
+			height: 15px;
+			font-family: contentFontType1;
+			font-size: 20px;
+			border-color: #754f23;
+			border: solid;
+			border-radius: 40px;
+			padding: 20px;
+			padding-left: 30px;
+			color: #754f23;
+			margin-left: 80px;
+			margin-top:60px;
+		}
+
+		#buttonText{
+			margin: 0px;
+			margin-top: -3px;
+			line-height: -10px;
+		}
+
+		#button:hover{
+			background-color: #754f23;
+			color: #fff;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="contentDisplayDiv">
+		<div id="menuDiv">
+			<img id="logo" src="img/logo_img.png"/>
+			<div id="menuDivText">
+				<p class="menuText">Home</p>
+				<p class="menuText" onclick="location.href='page4.html';" style="cursor: pointer;">Collection</p>
+				<p class="menuText">Brand</p>
+				<p class="menuText">About us</p>
+			</div>
+			<div id="menuTopIconDiv">
+				<img id="ribbonIcon" src="img/ribbon.png">
+				<img id="shoppingBagIcon" src="img/shopping-bag.png">
+			</div>
+		</div>
+
+		<div id="homePageDiv">
+			<div id="contentDiv">
+				<p id="contentText">Elevate Style, Embrace Story</p>
+				<p id="contentSmallText">
+					We provide the largest clothing collection for any season. You can choose trendy or classy design according to your preferences. Our services are super fast and we update within 24 hours.
+				</p>
+
+				<div id="button" onclick="location.href='page2.html';">
+					<p id="buttonText">Explore &#8594;</p>
+				</div>
+			</div>
+
+			<div id="homePageImgDiv">
+				<img id="homePageImg" src="img/home lady img.png"/>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

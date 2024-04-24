@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Product Overview</title>
+
+	<style>
+		@font-face {
+		  font-family: titleFont;
+		  src: url("fonts/CormorantUpright-Medium.ttf");
+		}
+
+		@font-face {
+		  font-family: contentFontType1;
+		  src: url("fonts/NotoSerifHebrew-Medium.ttf");
+		}
+
+		@font-face {
+		  font-family: contentFontType2;
+		  src: url("fonts/DMSerifDisplay-Regular.ttf");
+		}
+
+		body{
+		  background-color: #754f23;
+		  margin: 0px;
+		}
+
+		#contentDisplayDiv{
+		  width: 1000px;
+		  height: 1300px;
+		  background-color: #f1e8c8;
+		  border-radius: 25px;
+		  margin: 75px auto;
+		  padding: 25px 25px;
+		  box-shadow: 5px 5px 12px 2px #55432f;
+		  position: relative;
+		}
+
+		#menuDiv{
+		  position: absolute;
+		  width: 100%;
+		  z-index: 10;
+		  margin-left: 10px;
+		  display: flex;
+		}
+
+		#logo{
+			width: 150px;
+			height: 150px;
+			margin-right: 150px;
+		}
+
+		#menuDivText{
+			display: flex;
+		}
+
+		.menuText{
+			font-family: titleFont;
+			font-size: 25px;
+			color: #000;
+			margin-right: 40px;
+		}
+
+		#menuTopIconDiv{
+			width: 100%;
+			flex: 1;
+			margin-top: 25px;
+		}
+
+		#shoppingBagIcon{
+			width: 30px;
+			height: 30px;
+			margin-left: 10px;
+		}
+
+		#ribbonIcon{
+			width: 30px;
+			height: 30px;
+			margin-left: 60px;
+		}
+
+		#productOverviewDiv{
+			position: absolute;
+			z-index: 5;
+			width: calc(100% - 100px);
+			height: auto;
+			display: flex;
+		}
+
+		#productMultipleImgDiv{
+			width: 30%;
+			height: auto;
+			margin: 0px;
+			margin-top:50px;
+			padding-left: 40px;
+		}
+
+		#productLargeScaleImg{
+			width: 70%;
+			height: auto;
+			margin: 0px;
+			margin-top:50px;
+			margin-left: 110px;
+		}
+
+		.productImg
+		{
+			width: 80%;
+			height: auto;
+			border: solid;
+			border-radius: 20px;
+			border-width:3px;
+			border-color: #9e9e9e;
+			margin-bottom: 15px;
+		}
+
+		#productNameText{
+			font-family: titleFont;
+			font-size: 55px;
+			color:  #000;
+			margin:0px;
+			margin-top: 10px;
+		}
+
+		#productPriceText{
+			font-family: titleFont;
+			font-size: 55px;
+			color:  #000;
+			margin:0px;
+		}
+
+		#sizeText{
+			font-family: contentFontType1;
+			font-size: 30px;
+			color:  #000;
+			margin:0px;
+			margin-top: 40px;
+		}
+
+		#sizesBoxParent{
+			margin-top: 20px;
+			display: flex;
+		}
+
+		.sizesBoxDiv{
+			width: auto;
+			height: 60px;
+		 	border: solid;
+		 	border-color: #000;
+		 	border-width: 1px;
+		 	background-color: #fff;
+		 	text-align: center;
+		 	margin-right: 10px;
+		 	padding: 0px 20px;
+		}
+
+		.sizeText{
+			margin: 0px;
+			font-family: contentFontType1;
+			font-size: 30px;
+			color: #000;
+			margin-top: 13px;
+		}
+
+		#quantityText{
+			font-family: contentFontType1;
+			font-size: 30px;
+			color:  #000;
+			margin:0px;
+			margin-top: 40px;
+		}
+
+		#quantityChangeParent{
+			margin-top: 20px;
+			display: flex;
+		}
+
+		.quantityBoxDiv{
+			width: auto;
+			height: 80px;
+		 	border: solid;
+		 	border-color: #000;
+		 	border-width: 1px;
+		 	background-color: #9e9e9e;
+		 	text-align: center;
+			margin: 0px;
+		 	padding: 0px 20px;
+		}
+
+		.quantityBoxText{
+			margin: 0px;
+			font-family: contentFontType1;
+			font-size: 60px;
+			color: #000;
+			margin-top: 2px;
+		}
+
+		#buttonParentDiv{
+			margin-top: 30px;
+			display: flex;
+		}
+
+		#button{
+			width: auto;
+			height: 45px;
+			font-family: contentFontType2;
+			font-size: 30px;
+			background-color: #9e9e9e;
+			border-color: #000;
+			border: solid;
+			border-width: 1px;
+			padding: 20px 30px;
+			color: #000;
+			text-align: center;
+			margin-right: 15px;
+		}
+
+		#buttonText{
+			margin: 0px;
+			margin-top: -3px;
+			line-height: -10px;
+		}
+
+		#button:hover{
+			background-color: #754f23;
+			color: #fff;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="contentDisplayDiv">
+		<div id="productOverviewDiv">
+			<div id="productMultipleImgDiv">
+				<img class="productImg" src="img/productImg4.jpeg">
+				<img class="productImg" src="img/productImg1.jpeg">
+				<img class="productImg" src="img/productImg2.jpeg">
+				<img class="productImg" src="img/productImg3.jpeg">
+			</div>
+
+			<div id="productLargeScaleImg">
+				<img id="largeScaleImg" class="productImg" src="img/productImg5.jpeg">
+				<p id="productNameText">Camla Pink Long Coat</p>
+				<p id="productPriceText">&#x24;29.99</p>
+				<p id="sizeText">SIZE: S</p>
+				<div id="sizesBoxParent">
+					<div class="sizesBoxDiv" style="background-color: #000">
+						<p class="sizeText" style="color: #fff">S</p>
+					</div>
+					<div class="sizesBoxDiv">
+						<p class="sizeText">M</p>
+					</div>
+					<div class="sizesBoxDiv">
+						<p class="sizeText">L</p>
+					</div>
+					<div class="sizesBoxDiv">
+						<p class="sizeText">XL</p>
+					</div>
+					<div class="sizesBoxDiv">
+						<p class="sizeText">2XL</p>
+					</div>
+				</div>
+				<p id="quantityText">QUANTITY :</p>
+				<div id="quantityChangeParent">
+					<div class="quantityBoxDiv" style="padding: 0px 15px;">
+						<p class="quantityBoxText">-</p>
+					</div>
+					<div class="quantityBoxDiv">
+						<p class="quantityBoxText" style="font-size: 50px; margin-top: 8px;">1</p>
+					</div>
+					<div class="quantityBoxDiv" style="padding: 0px 10px;">
+						<p class="quantityBoxText" style="margin-top: 8px;">+</p>
+					</div>
+				</div>
+				<div id="buttonParentDiv">
+					<div id="button">
+						<p id="buttonText">ADD TO BAG</p>
+					</div>
+					<div id="button" style="background-color: #000">
+						<p id="buttonText" style="color: #fff">BUY IT NOW</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

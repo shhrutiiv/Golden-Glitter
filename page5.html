@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trendy Collection</title>
+  <link rel="stylesheet" href="css/page2.css">
+<style>
+  .div {
+    background-color: #754f23;
+    display: flex;
+    max-width: 840px;
+    flex-direction: column;
+    padding: 62px 47px 38px;
+  }
+  @media (max-width: 991px) {
+    .div {
+      padding: 0 20px;
+    }
+  }
+  .div-2 {
+    display: flex;
+    flex-direction: column;
+    fill: #f1e8c8;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    min-height: 1380px;
+    width: 100%;
+    padding: 49px 35px;
+  }
+  @media (max-width: 991px) {
+    .div-2 {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+  .img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .div-3 {
+    position: relative;
+    color: #000;
+    font: 600 40px Cormorant Upright, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-3 {
+      max-width: 100%;
+    }
+  }
+  .div-4 {
+    position: relative;
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #000;
+    margin-top: 21px;
+    height: 2px;
+  }
+  @media (max-width: 991px) {
+    .div-4 {
+      max-width: 100%;
+    }
+  }
+  .div-5 {
+    position: relative;
+    color: #2f2f2f;
+    margin-top: 27px;
+    font: 400 16px/25px Playfair Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-5 {
+      max-width: 100%;
+    }
+  }
+  .div-6 {
+    position: relative;
+    margin-top: 39px;
+  }
+  @media (max-width: 991px) {
+    .div-6 {
+      max-width: 100%;
+    }
+  }
+  .div-7 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-7 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column {
+      width: 100%;
+    }
+  }
+  .div-8 {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    font-size: 16px;
+    color: #000;
+  }
+  @media (max-width: 991px) {
+    .div-8 {
+      margin-top: 13px;
+    }
+  }
+  .div-9 {
+    border-radius: 16px;
+    border-color: rgba(117, 79, 35, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #f0eadc;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    padding: 27px 26px 8px 12px;
+  }
+  @media (max-width: 991px) {
+    .div-9 {
+      padding-right: 20px;
+    }
+  }
+  .img-2 {
+    aspect-ratio: 0.69;
+    object-fit: auto;
+    object-position: center;
+    width: 160px;
+    margin-left: 13px;
+  }
+  @media (max-width: 991px) {
+    .img-2 {
+      margin-left: 10px;
+    }
+  }
+  .div-10 {
+    font-family: Playfair Display, sans-serif;
+    align-self: center;
+    margin-top: 13px;
+  }
+  .div-11 {
+    font-family: Playfair Display, sans-serif;
+    margin-top: 36px;
+  }
+  .div-12 {
+    border-radius: 16px;
+    border-color: rgba(117, 79, 35, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #f0eadc;
+    display: flex;
+    margin-top: 36px;
+    flex-direction: column;
+    text-align: center;
+    padding: 18px 12px 7px;
+  }
+  .img-3 {
+    aspect-ratio: 0.75;
+    object-fit: auto;
+    object-position: center;
+    width: 186px;
+    align-self: center;
+  }
+  .div-13 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 500;
+    margin-top: 14px;
+  }
+  .div-14 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 400;
+    margin-top: 29px;
+  }
+  .div-15 {
+    border-radius: 16px;
+    border-color: rgba(117, 79, 35, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #f0eadc;
+    display: flex;
+    margin-top: 36px;
+    flex-direction: column;
+    text-align: center;
+    padding: 17px 6px 5px 13px;
+  }
+  .img-4 {
+    aspect-ratio: 0.58;
+    object-fit: auto;
+    object-position: center;
+    width: 153px;
+    max-width: 100%;
+  }
+  .div-16 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 500;
+    margin-top: 4px;
+  }
+  .div-17 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 400;
+    margin-top: 28px;
+  }
+  .column-2 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-2 {
+      width: 100%;
+    }
+  }
+  .div-18 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    margin: auto 0;
+  }
+  @media (max-width: 991px) {
+    .div-18 {
+      margin-top: 40px;
+    }
+  }
+  .div-19 {
+    border-radius: 16px;
+    border-color: rgba(117, 79, 35, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #f0eadc;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 15px 9px;
+  }
+  .img-5 {
+    aspect-ratio: 0.76;
+    object-fit: auto;
+    object-position: center;
+    width: 177px;
+    align-self: center;
+  }
+  .div-20 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 500;
+    margin-top: 14px;
+  }
+  .div-21 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 400;
+    margin-top: 45px;
+  }
+  @media (max-width: 991px) {
+    .div-21 {
+      margin-top: 40px;
+    }
+  }
+  .div-22 {
+    border-radius: 16px;
+    border-color: rgba(117, 79, 35, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #f0eadc;
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 13px 4px;
+  }
+  @media (max-width: 991px) {
+    .div-22 {
+      margin-top: 40px;
+    }
+  }
+  .img-6 {
+    aspect-ratio: 0.75;
+    object-fit: auto;
+    object-position: center;
+    width: 185px;
+  }
+  .div-23 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+  .div-24 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 400;
+    align-self: start;
+    margin: 49px 0 0 11px;
+  }
+  @media (max-width: 991px) {
+    .div-24 {
+      margin: 40px 0 0 10px;
+    }
+  }
+  .column-3 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-3 {
+      width: 100%;
+    }
+  }
+  .div-25 {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+  }
+  @media (max-width: 991px) {
+    .div-25 {
+      margin-top: 13px;
+    }
+  }
+  .div-26 {
+    border-radius: 16px;
+    border-color: rgba(117, 79, 35, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #f0eadc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    padding: 18px 25px 7px 10px;
+  }
+  @media (max-width: 991px) {
+    .div-26 {
+      padding-right: 20px;
+    }
+  }
+  .img-7 {
+    aspect-ratio: 0.75;
+    object-fit: auto;
+    object-position: center;
+    width: 186px;
+  }
+  .div-27 {
+    font-family: Playfair Display, sans-serif;
+    margin-top: 4px;
+    width: 316px;
+  }
+  .div-28 {
+    font-family: Playfair Display, sans-serif;
+    align-self: stretch;
+    margin-top: 37px;
+  }
+  .div-29 {
+    display: flex;
+    margin-top: 36px;
+    padding-left: 10px;
+    flex-direction: column;
+  }
+  .div-30 {
+    border-radius: 16px;
+    border-color: rgba(117, 79, 35, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #f0eadc;
+    display: flex;
+    flex-direction: column;
+    padding: 18px 9px 7px;
+  }
+  .img-8 {
+    aspect-ratio: 0.81;
+    object-fit: auto;
+    object-position: center;
+    width: 194px;
+    align-self: center;
+  }
+  .div-31 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 500;
+    margin-top: 12px;
+  }
+  .div-32 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 400;
+    margin-top: 39px;
+  }
+  .div-33 {
+    border-radius: 16px;
+    border-color: rgba(117, 79, 35, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #f0eadc;
+    display: flex;
+    margin-top: 36px;
+    flex-direction: column;
+    align-items: center;
+    padding: 17px 15px 5px;
+  }
+  .img-9 {
+    aspect-ratio: 0.75;
+    object-fit: auto;
+    object-position: center;
+    width: 177px;
+  }
+  .div-34 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 500;
+    margin-top: 4px;
+  }
+  .div-35 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 400;
+    align-self: stretch;
+    margin-top: 55px;
+  }
+  @media (max-width: 991px) {
+    .div-35 {
+      margin-top: 40px;
+    }
+  }
+</style>
+</head>
+<body>
+  <html>
+    <div class="div">
+  <div class="div-2">
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/f02bd81b3d9072f87225a07f3cb8e5dead60ea8f2731d3b82112d51c875f09f7?"
+      class="img"
+    />
+    <div class="div-3">Trendy picks from summer collection</div>
+    <div class="div-4"></div>
+    <div class="div-5">
+      Our main aim is to serve our customer with better quality product. We try
+      to understand their needs and provide them within a short period of time.
+    </div>
+    <div class="div-6">
+      <div class="div-7">
+        <div class="column">
+          <div class="div-8">
+            <div class="div-9">
+              <img id="img2" src="img/Summer t1.png"
+              />
+              <div class="div-10">Satin Sea Blue Top</div>
+              <div class="div-11">Price: $15.65</div>
+            </div>
+            <div class="div-12">
+              <img id="img1" src="img/summer t2.png"
+              />
+              <div class="div-13">Goofy Print White Shirt</div>
+              <div class="div-14">
+                Price: $25.00
+                <br />
+              </div>
+            </div>
+            <div class="div-15">
+              <img id="img-3" src="img/summer t3.png"
+              />
+              <div class="div-16">Blue and White Co-ord Set</div>
+              <div class="div-17">
+                Price: $30.23
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column-2">
+          <div class="div-18">
+            <div class="div-19">
+              <img id="img-4" src="img/summer t4.png"
+              />
+              <div class="div-20">Brown and White Top</div>
+              <div class="div-21">
+                Price: $20.00
+                <br />
+              </div>
+            </div>
+            <div class="div-22">
+              <img id="img-5" src="img/summer t5.png"
+              />
+              <div class="div-23">Glittery Dress</div>
+              <div class="div-24">
+                Price: $50.89
+                <br />
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column-3">
+          <div class="div-25">
+            <div class="div-26">
+              <img id="img-6" src="img/summer t6.png"
+              />
+              <div class="div-27">
+                Black Jumpsuit
+                <br />
+                <br />
+                <br />
+                <br />
+              </div>
+              <div class="div-28">Price: $10.99</div>
+            </div>
+            <div class="div-29">
+              <div class="div-30">
+                <img id="img-7" src="img/summer t7.png"
+                />
+                <div class="div-31">Brown and White Jumpsuit</div>
+                <div class="div-32">
+                  Price: $52.89
+                  <br />
+                  <br />
+                </div>
+              </div>
+              <div class="div-33">
+                <img id="img-8" src="img/summer t8.png"
+                />
+                <div class="div-34">Phoo Pink Night Suit</div>
+                <div class="div-35">
+                  Price: $30.00
+                  <br />
+                  <br />
+                  <br />
+                  <div id="button" onclick="location.href='page6.html';">
+                    <p id="buttonText">View All &#8594;</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</html>

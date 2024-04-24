@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trendy Collection 2</title>
+  <link rel="stylesheet" href="css/page2.css">
+<style>
+    
+  .div {
+    background-color: #754f23;
+    display: flex;
+    max-width: 840px;
+    flex-direction: column;
+    padding: 39px 45px 61px;
+  }
+  @media (max-width: 991px) {
+    .div {
+      padding: 0 20px;
+    }
+  }
+  .div-2 {
+    display: flex;
+    flex-direction: column;
+    fill: #f1e8c8;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    min-height: 1380px;
+    width: 100%;
+    padding: 80px 34px;
+  }
+  @media (max-width: 991px) {
+    .div-2 {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+  .img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .div-3 {
+    position: relative;
+    margin-top: 51px;
+  }
+  @media (max-width: 991px) {
+    .div-3 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-4 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-4 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column {
+      width: 100%;
+    }
+  }
+  .div-5 {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+  }
+  @media (max-width: 991px) {
+    .div-5 {
+      margin-top: 25px;
+    }
+  }
+  .div-6 {
+    border-radius: 16px;
+    border-color: rgba(117, 79, 35, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #f0eadc;
+    display: flex;
+    flex-direction: column;
+    padding: 21px 12px 6px;
+  }
+  .img-2 {
+    aspect-ratio: 0.69;
+    object-fit: auto;
+    object-position: center;
+    width: 186px;
+    align-self: center;
+  }
+  .div-7 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 500;
+    margin-top: 7px;
+  }
+  .div-8 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 400;
+    margin-top: 13px;
+  }
+  .div-9 {
+    border-radius: 16px;
+    border-color: rgba(117, 79, 35, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #f0eadc;
+    display: flex;
+    margin-top: 39px;
+    flex-direction: column;
+    padding: 18px 12px 10px;
+  }
+  .img-3 {
+    aspect-ratio: 0.69;
+    object-fit: auto;
+    object-position: center;
+    width: 180px;
+    align-self: center;
+  }
+  .div-10 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 500;
+    margin-top: 4px;
+  }
+  .div-11 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 400;
+    margin-top: 25px;
+  }
+  .div-12 {
+    border-radius: 16px;
+    border-color: rgba(117, 79, 35, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #f0eadc;
+    display: flex;
+    margin-top: 39px;
+    flex-direction: column;
+    padding: 8px 13px;
+  }
+  .img-4 {
+    aspect-ratio: 0.59;
+    object-fit: auto;
+    object-position: center;
+    width: 169px;
+    align-self: center;
+  }
+  .div-13 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 500;
+  }
+  .div-14 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 400;
+    margin-top: 11px;
+  }
+  .column-2 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-2 {
+      width: 100%;
+    }
+  }
+  .div-15 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    margin: auto 0;
+  }
+  @media (max-width: 991px) {
+    .div-15 {
+      margin-top: 40px;
+    }
+  }
+  .div-16 {
+    border-radius: 16px;
+    border-color: rgba(117, 79, 35, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #f0eadc;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 12px;
+  }
+  .img-5 {
+    aspect-ratio: 0.7;
+    object-fit: auto;
+    object-position: center;
+    width: 187px;
+    align-self: center;
+  }
+  .div-17 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 500;
+    margin-top: 4px;
+  }
+  .div-18 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 400;
+    margin-top: 25px;
+  }
+  .div-19 {
+    border-radius: 16px;
+    border-color: rgba(117, 79, 35, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #f0eadc;
+    display: flex;
+    margin-top: 59px;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 12px 3px;
+  }
+  @media (max-width: 991px) {
+    .div-19 {
+      padding-right: 20px;
+      margin-top: 40px;
+    }
+  }
+  .img-6 {
+    aspect-ratio: 0.62;
+    object-fit: auto;
+    object-position: center;
+    width: 177px;
+  }
+  .div-20 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 500;
+    margin-top: 4px;
+  }
+  .div-21 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 400;
+    align-self: stretch;
+    margin-top: 11px;
+  }
+  .column-3 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-3 {
+      width: 100%;
+    }
+  }
+  .div-22 {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+  }
+  @media (max-width: 991px) {
+    .div-22 {
+      margin-top: 25px;
+    }
+  }
+  .div-23 {
+    border-radius: 16px;
+    border-color: rgba(117, 79, 35, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #f0eadc;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0 6px;
+  }
+  .img-7 {
+    aspect-ratio: 0.94;
+    object-fit: auto;
+    object-position: center;
+    width: 212px;
+    align-self: center;
+  }
+  .div-24 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 500;
+    align-self: end;
+    margin-top: 15px;
+  }
+  @media (max-width: 991px) {
+    .div-24 {
+      margin-right: 10px;
+    }
+  }
+  .div-25 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 400;
+    margin-top: 57px;
+  }
+  @media (max-width: 991px) {
+    .div-25 {
+      margin-top: 40px;
+    }
+  }
+  .div-26 {
+    border-radius: 16px;
+    border-color: rgba(117, 79, 35, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #f0eadc;
+    display: flex;
+    margin-top: 39px;
+    flex-direction: column;
+    padding: 18px 18px 10px;
+  }
+  .img-8 {
+    aspect-ratio: 0.78;
+    object-fit: auto;
+    object-position: center;
+    width: 175px;
+    align-self: center;
+  }
+  .div-27 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 500;
+    margin-top: 25px;
+  }
+  .div-28 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 400;
+    margin-top: 37px;
+  }
+  .div-29 {
+    border-radius: 16px;
+    border-color: rgba(117, 79, 35, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #f0eadc;
+    display: flex;
+    margin-top: 39px;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 15px;
+  }
+  @media (max-width: 991px) {
+    .div-29 {
+      padding-right: 20px;
+    }
+  }
+  .img-9 {
+    aspect-ratio: 0.71;
+    object-fit: auto;
+    object-position: center;
+    width: 175px;
+  }
+  .div-30 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 500;
+    margin-top: 14px;
+  }
+  .div-31 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 400;
+    align-self: stretch;
+    margin-top: 41px;
+  }
+  @media (max-width: 991px) {
+    .div-31 {
+      margin-top: 40px;
+    }
+  }
+  .div-32 {
+    position: relative;
+    border-radius: 16px;
+    border-color: rgba(117, 79, 35, 1);
+    border-style: solid;
+    border-width: 2px;
+    align-self: center;
+    display: flex;
+    margin-top: 11px;
+    gap: 14px;
+    font-size: 16px;
+    color: #754f23;
+    font-weight: 400;
+    padding: 13px 22px;
+  }
+  @media (max-width: 991px) {
+    .div-32 {
+      padding-right: 20px;
+    }
+  }
+  .div-33 {
+    font-family: Playfair Display, sans-serif;
+  }
+  .img-10 {
+    aspect-ratio: 2.38;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+    align-self: start;
+  }
+</style>
+</head>
+<body>
+    <div class="div">
+  <div class="div-2">
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/8a7f24347c0603d441a1fcae79aed30c7f9251c0685c6a407f9bfe57844a47f1?"
+      class="img"
+    />
+    <div class="div-3">
+      <div class="div-4">
+        <div class="column">
+          <div class="div-5">
+            <div class="div-6">
+              <img id="img1" src="img/summer b1.png"
+              />
+              <div class="div-7">Blue Ripped Denim Jeans</div>
+              <div class="div-8">
+                Price: $25.32
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+            <div class="div-9">
+              <img id="img-2" src="img/summer b2.png"
+              />
+              <div class="div-10">White and Orange Skirt</div>
+              <div class="div-11">
+                Price: $10.32
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+            <div class="div-12">
+              <img id="img-3" src="img/summer b3.png"
+              />
+              <div class="div-13">Light Blue Denim Shorts</div>
+              <div class="div-14">
+                Price: $10.00
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column-2">
+          <div class="div-15">
+            <div class="div-16">
+              <img id="img-4" src="img/productImg4.jpeg"
+              />
+              <div class="div-17">Light Blue Denim Jeans</div>
+              <div class="div-18">
+                Price: $30.32
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+            <div class="div-19">
+              <img id="img-5" src="img/summer b5.png"
+              />
+              <div class="div-20">Powder Blue Trouser</div>
+              <div class="div-21">
+                Price: $30.00
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column-3">
+          <div class="div-22">
+            <div class="div-23">
+              <img id="img-6" src="img/summer b6.png"
+              />
+              <div class="div-24">Dark Blue Shorts</div>
+              <div class="div-25">
+                Price: $29.32
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+            <div class="div-26">
+              <img id="img-7" src="img/summer b7.png"
+              />
+              <div class="div-27">Light Blue Denim Skirt</div>
+              <div class="div-28">
+                Price: $15.32
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+            <div class="div-29">
+              <img id="img-8" src="img/summer b8.png"
+              />
+              <div class="div-30">Beige Cargo Pants</div>
+              <div class="div-31">
+                Price: $50.00
+                <br />
+                <br />
+                <br />
+                    <div id="button" onclick="location.href='page7.html';">
+                        <p id="buttonText">View More &#8594;</p>
+                      </div>
+                    <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/8065280dc96f164a28d720f1f2e2276df27b3df94bbc178bcb8a841502ae8ce5?"
+        class="img-10"
+      />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

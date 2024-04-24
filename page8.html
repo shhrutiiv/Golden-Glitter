@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winter Collection</title>
+  <link rel="stylesheet" href="css/page2.css">
+
+  <style>
+    .div {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      min-height: 1480px;
+      max-width: 840px;
+      padding: 80px 69px;
+    }
+    @media (max-width: 991px) {
+      .div {
+        padding: 0 20px;
+      }
+    }
+    .img {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .div-2 {
+      position: relative;
+      color: #000;
+      margin-top: 6px;
+      font: 600 40px Cormorant Upright, -apple-system, Roboto, Helvetica,
+        sans-serif;
+    }
+    @media (max-width: 991px) {
+      .div-2 {
+        max-width: 100%;
+      }
+    }
+    .img-2 {
+      object-fit: auto;
+      object-position: center;
+      width: 100%;
+      stroke-width: 1px;
+      stroke: #000;
+      border-color: rgba(0, 0, 0, 1);
+      border-style: solid;
+      border-width: 1px;
+      align-self: center;
+      margin-top: 20px;
+      max-width: 620px;
+    }
+    @media (max-width: 991px) {
+      .img-2 {
+        max-width: 100%;
+      }
+    }
+    .div-3 {
+      position: relative;
+      color: #2f2f2f;
+      margin-top: 28px;
+      font: 400 16px/25px Playfair Display, -apple-system, Roboto, Helvetica,
+        sans-serif;
+    }
+    @media (max-width: 991px) {
+      .div-3 {
+        max-width: 100%;
+      }
+    }
+    .div-4 {
+      position: relative;
+      margin-top: 25px;
+    }
+    @media (max-width: 991px) {
+      .div-4 {
+        max-width: 100%;
+      }
+    }
+    .div-5 {
+      gap: 20px;
+      display: flex;
+    }
+    @media (max-width: 991px) {
+      .div-5 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0px;
+      }
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 33%;
+      margin-left: 0px;
+    }
+    @media (max-width: 991px) {
+      .column {
+        width: 100%;
+      }
+    }
+    .div-6 {
+      position: relative;
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      font-size: 16px;
+      color: #000;
+      text-align: center;
+    }
+    @media (max-width: 991px) {
+      .div-6 {
+        margin-top: 28px;
+      }
+    }
+    .div-7 {
+      border-radius: 16px;
+      border-color: rgba(117, 79, 35, 1);
+      border-style: solid;
+      border-width: 1px;
+      background-color: #f0eadc;
+      display: flex;
+      flex-direction: column;
+      padding: 11px 16px;
+    }
+    .img-3 {
+      aspect-ratio: 0.64;
+      object-fit: auto;
+      object-position: center;
+      width: 168px;
+    }
+    .div-8 {
+      font-family: Playfair Display, sans-serif;
+      font-weight: 500;
+      margin-top: 7px;
+    }
+    .div-9 {
+      font-family: Playfair Display, sans-serif;
+      font-weight: 400;
+      margin-top: 25px;
+    }
+    .div-10 {
+      border-radius: 16px;
+      border-color: rgba(117, 79, 35, 1);
+      border-style: solid;
+      border-width: 1px;
+      background-color: #f0eadc;
+      display: flex;
+      margin-top: 41px;
+      flex-direction: column;
+      padding: 11px 5px 11px 18px;
+    }
+    @media (max-width: 991px) {
+      .div-10 {
+        margin-top: 40px;
+      }
+    }
+    .img-4 {
+      aspect-ratio: 0.67;
+      object-fit: auto;
+      object-position: center;
+      width: 167px;
+      max-width: 100%;
+    }
+    .div-11 {
+      font-family: Playfair Display, sans-serif;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+    .div-12 {
+      font-family: Playfair Display, sans-serif;
+      font-weight: 400;
+      margin-top: 35px;
+    }
+    .div-13 {
+      border-radius: 16px;
+      border-color: rgba(117, 79, 35, 1);
+      border-style: solid;
+      border-width: 1px;
+      background-color: #f0eadc;
+      display: flex;
+      margin-top: 59px;
+      flex-direction: column;
+      padding: 17px 18px;
+    }
+    @media (max-width: 991px) {
+      .div-13 {
+        padding-right: 20px;
+        margin-top: 40px;
+      }
+    }
+    .img-5 {
+      aspect-ratio: 0.69;
+      object-fit: auto;
+      object-position: center;
+      width: 166px;
+      align-self: center;
+    }
+    .div-14 {
+      font-family: Playfair Display, sans-serif;
+      font-weight: 500;
+      margin-top: 9px;
+    }
+    .div-15 {
+      font-family: Playfair Display, sans-serif;
+      font-weight: 400;
+      margin-top: 14px;
+    }
+    .column-2 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 33%;
+      margin-left: 20px;
+    }
+    @media (max-width: 991px) {
+      .column-2 {
+        width: 100%;
+      }
+    }
+    .div-16 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-self: stretch;
+      font-size: 16px;
+      color: #000;
+      text-align: center;
+      margin: auto 0;
+    }
+    @media (max-width: 991px) {
+      .div-16 {
+        margin-top: 40px;
+      }
+    }
+    .div-17 {
+      border-radius: 16px;
+      border-color: rgba(117, 79, 35, 1);
+      border-style: solid;
+      border-width: 1px;
+      background-color: #f0eadc;
+      display: flex;
+      flex-direction: column;
+      padding: 16px 15px 10px;
+    }
+    .img-6 {
+      aspect-ratio: 0.7;
+      object-fit: auto;
+      object-position: center;
+      width: 181px;
+      align-self: center;
+    }
+    .div-18 {
+      font-family: Playfair Display, sans-serif;
+      font-weight: 500;
+      margin-top: 8px;
+    }
+    .div-19 {
+      font-family: Playfair Display, sans-serif;
+      font-weight: 400;
+      align-self: start;
+      margin: 25px 0 0 10px;
+    }
+    .div-20 {
+      display: flex;
+      flex-direction: column;
+      fill: #f0eadc;
+      stroke-width: 1px;
+      stroke: #754f23;
+      overflow: hidden;
+      border-color: rgba(117, 79, 35, 1);
+      border-style: solid;
+      border-width: 1px;
+      align-self: center;
+      position: relative;
+      display: flex;
+      aspect-ratio: 0.61;
+      margin-top: 59px;
+      width: 211px;
+      padding: 15px 7px;
+    }
+    @media (max-width: 991px) {
+      .div-20 {
+        margin-top: 40px;
+      }
+    }
+    .img-7 {
+      aspect-ratio: 0.76;
+      object-fit: auto;
+      object-position: center;
+      width: 160px;
+      align-self: center;
+      margin: 0 19px;
+    }
+    .div-21 {
+      position: relative;
+      font-family: Playfair Display, sans-serif;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+    .div-22 {
+      position: relative;
+      font-family: Playfair Display, sans-serif;
+      font-weight: 400;
+      align-self: start;
+      margin: 66px 0 0 19px;
+    }
+    @media (max-width: 991px) {
+      .div-22 {
+        margin: 40px 0 0 10px;
+      }
+    }
+    .column-3 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 33%;
+      margin-left: 20px;
+    }
+    @media (max-width: 991px) {
+      .column-3 {
+        width: 100%;
+      }
+    }
+    .div-23 {
+      position: relative;
+      display: flex;
+      margin-top: 12px;
+      flex-grow: 1;
+      flex-direction: column;
+      font-size: 16px;
+      color: #000;
+      text-align: center;
+    }
+    @media (max-width: 991px) {
+      .div-23 {
+        margin-top: 40px;
+      }
+    }
+    .div-24 {
+      border-radius: 16px;
+      border-color: rgba(117, 79, 35, 1);
+      border-style: solid;
+      border-width: 1px;
+      background-color: #f0eadc;
+      display: flex;
+      flex-direction: column;
+      padding: 11px 14px;
+    }
+    @media (max-width: 991px) {
+      .div-24 {
+        margin-right: 5px;
+      }
+    }
+    .img-8 {
+      aspect-ratio: 0.56;
+      object-fit: auto;
+      object-position: center;
+      width: 135px;
+      align-self: center;
+      max-width: 100%;
+    }
+    .div-25 {
+      font-family: Playfair Display, sans-serif;
+      font-weight: 500;
+      margin-top: 17px;
+    }
+    .div-26 {
+      font-family: Playfair Display, sans-serif;
+      font-weight: 400;
+      margin-top: 35px;
+    }
+    .div-27 {
+      border-radius: 16px;
+      border-color: rgba(117, 79, 35, 1);
+      border-style: solid;
+      border-width: 1px;
+      background-color: #f0eadc;
+      display: flex;
+      margin-top: 34px;
+      flex-direction: column;
+      padding: 13px 27px;
+    }
+    @media (max-width: 991px) {
+      .div-27 {
+        margin-right: 5px;
+        padding: 0 20px;
+      }
+    }
+    .img-9 {
+      aspect-ratio: 0.64;
+      object-fit: auto;
+      object-position: center;
+      width: 160px;
+      align-self: center;
+    }
+    .div-28 {
+      font-family: Playfair Display, sans-serif;
+      font-weight: 500;
+      margin-top: 6px;
+    }
+    .div-29 {
+      font-family: Playfair Display, sans-serif;
+      font-weight: 400;
+      margin-top: 38px;
+    }
+    .div-30 {
+      border-radius: 16px;
+      border-color: rgba(117, 79, 35, 1);
+      border-style: solid;
+      border-width: 1px;
+      background-color: #f0eadc;
+      display: flex;
+      margin-top: 54px;
+      flex-direction: column;
+      align-items: center;
+      padding: 17px 23px;
+    }
+    @media (max-width: 991px) {
+      .div-30 {
+        padding-left: 20px;
+        margin-top: 40px;
+      }
+    }
+    .img-10 {
+      aspect-ratio: 0.74;
+      object-fit: auto;
+      object-position: center;
+      width: 175px;
+    }
+    .div-31 {
+      font-family: Playfair Display, sans-serif;
+      font-weight: 500;
+      margin-top: 9px;
+    }
+    .div-32 {
+      font-family: Playfair Display, sans-serif;
+      font-weight: 400;
+      align-self: stretch;
+      margin-top: 35px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div">
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/0f5c283143fb9ca4aef77736e81e074c088d2cb5261429b5e6b3b02f36caf8a9?"
+      class="img"
+    />
+    <div class="div-2">Trendy picks from winter collection</div>
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/4845f17d0c356149330557feb3e358b8e0bd206596f4e76f95acf62565e0d86c?"
+      class="img-2"
+    />
+    <div class="div-3">
+      Our main aim is to serve our customer with better quality product. We try to
+      understand their needs and provide them within a short period of time.
+    </div>
+    <div class="div-4">
+      <div class="div-5">
+        <div class="column">
+          <div class="div-6">
+            <div class="div-7">
+              <img id="img1" src="img/image 1.png"
+              />
+              <div class="div-8">Black Denim Crop Jacket</div>
+              <div class="div-9">
+                Price: $50.00
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+            <div class="div-10">
+              <img id="img-2" src="img/image 2.png"
+              />
+              <div class="div-11">Brown Mickey Sweatshirt</div>
+              <div class="div-12">
+                Price: $50.00
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+            <div class="div-13">
+              <img id="img-3" src="img/image 3.png"
+              />
+              <div class="div-14">Long Black and White Cardiagin</div>
+              <div class="div-15">
+                Price: $80.00
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column-2">
+          <div class="div-16">
+            <div class="div-17">
+              <img id="img-4" src="img/image 4.png"
+              />
+              <div class="div-18">Pink and White Cardiagn</div>
+              <div class="div-19">
+                Price: $80.00
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+            <div class="div-20">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/146f5f24d28dc450d99a68129b278eff26cec792a65cd6cbd7df3bcc35f7bfbb?"
+                class="img"
+              />
+              <img id="img-5" src="img/image 5.png"
+              />
+              <div class="div-21">High Neck Baige sweatshirt</div>
+              <div class="div-22">
+                Price: $50.00
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column-3">
+          <div class="div-23">
+            <div class="div-24">
+              <img id="img-6" src="img/image 6.png"
+              />
+              <div class="div-25">Black Full Length Joggers</div>
+              <div class="div-26">
+                Price: $20.00
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+            <div class="div-27">
+              <img id="img-7" src="img/image 7.png"
+              />
+              <div class="div-28">Powder Blue Hoodie</div>
+              <div class="div-29">
+                Price: $70.00
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+            <div class="div-30">
+              <img id="img-8" src="img/image 8.png"
+              />
+              <div class="div-31">Black Crop Blazer</div>
+              <div class="div-32">
+                Price: $29.00
+                <br />
+                <br />
+                <br />
+                <div id="button" onclick="location.href='page9.html';">
+                    <p id="buttonText">View More &#8594;</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+  
